@@ -14,12 +14,15 @@
 #define MAX_BUSY_WAIT	400 // spi_clk 2MHz -> 400; 4MHz -> 800
 
 // eeprom cmd
-#define EE_WRSR		0x01
-#define EE_WRITE	0x02
-#define EE_READ		0x03
-#define EE_WRDI		0x04
-#define EE_RDSR		0x05
-#define EE_WREN		0x06
+#define EE_WRSR     0x01
+#define EE_WRITE    0x02
+#define EE_READ     0x03
+#define EE_WRDI     0x04
+#define EE_RDSR     0x05
+#define EE_WREN     0x06
+#define EE_WRPRT    0x36
+#define EE_WRUNPRT  0x39
+
 
 eeprom_err_callback eeprom_err_callback_f = 0;
 
