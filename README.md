@@ -1,4 +1,4 @@
-# AT25xxx SPI-EEPROM driver for TI TMS320F28xxx CPU.
+# AT25128, AT25256 SPI-EEPROM driver for TI TMS320F28xxx CPU.
 
 Designed as avr-gcc styled eeprom API functions.
 
@@ -21,4 +21,4 @@ void eeprom_err(void) {
     // TODO
 }
 ```
-###### Remark: TI C28 core has only integer types with a minimum width of 16 bits. For multi-platform compatibility this driver use `uint8_t` type. Add to your project: `typedef unsigned int uint8_t;`
+### Remark: TI C28 core has only integer types with a minimum width of 16 bits. For multi-platform compatibility this driver use `uint8_t` type. Add to your project: `typedef unsigned int uint8_t;`
